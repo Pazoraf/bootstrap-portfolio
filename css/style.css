@@ -1,7 +1,3 @@
-.sideAccent {
-    background: blue;
-    width: 24px;
-}
 
 .card-img-top {
     width: 100%;
@@ -14,4 +10,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.vr {
+    width: 5px;
 }
