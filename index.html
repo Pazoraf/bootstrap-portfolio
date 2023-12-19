@@ -16,11 +16,11 @@
          <!-- Navigation section, component pulled from bootstrap docs-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <h1 class="nabar-text">Alexander Flaherty Portfolio</h1>
+              <h1 class="navbar-text">Alexander Flaherty Portfolio</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+              <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#jumbotron">Introduction</a>
@@ -44,8 +44,8 @@
         
         <!-- End Navigation section -->
 
-        <!-- Hero section -->
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <!-- Hero section component pulled from bootstrap docs -->
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" id="jumbotron">
           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
             <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Alexander Flaherty</h1>
             <p class="lead">Front-end web development student. Join me and monitor my progress as I embark on my journey into web development!</p>
@@ -59,10 +59,10 @@
 
         <!-- End hero section -->
         
-        <!-- Work section -->
+        <!-- Work section card components pulled from bootstrap docs-->
         <div class="container-fluid" id="work">
           <div class="row">
-              <div class="col-lg-1 d-flex align-items-center justify-content-end border-end">
+              <div class="col-lg-1 d-flex align-items-center justify-content-center border-end">
                 <h2>Work:</h2>
               </div>
               <div class="col-lg-11">
@@ -156,13 +156,33 @@
 
         <!-- End work section -->
         <hr>
-        <!-- Skills section -->
+        <!-- Skills section list components pulled from bootstrap docs -->
         <div class="container-fluid" id="skills">
           <div class="row">
-            <div class="col-lg-1 d-flex align-items-center justify-content-end border-end">
+            <div class="col-lg-1 d-flex align-items-center justify-content-center border-end">
               <h2>Skills:</h2>
             </div>
             <div class="col-lg-11">
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">JavaScript</li>
+              </ul>
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">UX design</li>
+                <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">JQuery</li>
+              </ul>
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item ">JSON</li>
+                <li class="list-group-item ">AJAX</li>
+                <li class="list-group-item ">JQuery</li>
+              </ul>
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Agile Development</li>
+                <li class="list-group-item">ES6</li>
+                <li class="list-group-item">React</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -170,17 +190,45 @@
 
         <!-- End skills section -->
         <hr>
-        <!-- About me section-->
-
+        <!-- About me section jumbotron component pulled from bootstrap docs-->
+        <div class="container-fluid" id="about">
+          <div class="row">
+            <div class="col-lg-1 d-flex align-items-center justify-content-center border-end">
+              <h2>About:</h2>
+            </div>
+            <div class="col-lg-11">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>About Alex!</h2>
+                <p>An intermediate with computers, but a beginner with coding. I've always had an interest in regards to learning programming languages but was unsure where to start; web-development is both an exciting and increasingly in demand skill which caused me to gravitate towards it. Drawing on both analytical and creative skills it is an almost perfect fit for me, as I am a logical but also creative person.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
         <!-- End about me section -->
 
-        <!-- Contact me section -->
+        <!-- Contact me/footer section -->
 
-
+        <div class="container" id="contact">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3 boxShadow">
+              <li class="nav-item footerHover"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">GitHub</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Email</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Twitter</a></li>
+            </ul>
+            <p class="text-center text-muted">© Alexander Flaherty, 2023</p>
+          </footer>
+        </div>
 
         <!-- End contact me section -->
 
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
